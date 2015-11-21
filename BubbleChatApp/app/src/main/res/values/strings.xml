@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">BubbleChatApp</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="PasswordAgain">Password Again</string>
+    <string name="LoginBtn">Login</string>
+    <string name="SignupBtn">Sign Up</string>
+    <string name="RegisterBtn">Register</string>
     <string name="action_friend_list">Friend list</string>
     <string name="action_profile">Profile settings</string>
     <string name="logout">Logout</string>
