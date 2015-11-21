@@ -1,18 +1,28 @@
 package bubblechatappteam.bubblechatapp;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
+/**
+ * Created by gerybravo on 2015.11.21..
+ */
+public class MessageActivity extends ActionBarActivity {
 
-public class MainActivity extends ActionBarActivity {
+    private ImageView bubble, profileMini;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.message_activity);
+        bubble = (ImageView) findViewById(R.id.ivBubble);
+        profileMini = (ImageView) findViewById(R.id.ivProfilePicMini);
+
+        bubble.setImageResource(R.drawable.bubble);
+        profileMini.setImageResource(R.drawable.blank_profile);
     }
 
     @Override
@@ -33,7 +43,7 @@ public class MainActivity extends ActionBarActivity {
         switch (id)
         {
             case R.id.action_friend_list:
-                Log.d("MenuItem", "action_friend_list");
+                Log.d("MenuItem","action_friend_list");
                 break;
             case R.id.action_profile:
                 Log.d("MenuItem","action_profile");
